@@ -7,6 +7,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --main-green: #166041;
+  --light-green: #0cbe74;
+  --footer-bg: #1c1d1c;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,11 +27,14 @@
     padding: 0 1rem;
   }
   .button {
-    @apply self-center px-3 py-1 bg-main-green text-white rounded-tl-xl transition-all delay-75 rounded-br-xl hover:rounded-br-none hover:rounded-tl-none hover:rounded-bl-xl hover:rounded-tr-xl hover:bg-light-green;
+    @apply self-center px-4 py-2 bg-gradient-to-r from-main-green to-light-green text-white duration-150 rounded-br-xl rounded-tl-xl hover:rounded-br-none hover:rounded-tl-none hover:rounded-bl-xl hover:rounded-tr-xl;
+  }
+  .section {
+    @apply py-20;
   }
 
   .input {
-    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
+    @apply px-4 py-4 bg-slate-100 text-lg rounded-lg shadow-xl active:outline-light-green focus:outline-light-green;
   }
 }
 

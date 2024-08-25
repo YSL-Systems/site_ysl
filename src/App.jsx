@@ -4,22 +4,22 @@ import { About, Contacts, FAQ, Footer, Hero, OurServices, WhyChoose } from './se
 const App = () => (
   <main className="font-montserrat">
     <Nav />
-    <section>
+    <section id="#">
       <Hero />
     </section>
-    <section>
+    <section id="our-services" className="section">
       <OurServices />
     </section>
-    <section>
+    {/* <section className="section">
       <About />
-    </section>
-    <section>
+    </section> */}
+    <section id="why-choose" className="section bg-gradient-to-r from-[#d2ffe0] to-[#c5ffb8]">
       <WhyChoose />
     </section>
-    <section>
+    {/* <section>
       <FAQ />
-    </section>
-    <section>
+    </section> */}
+    <section id="contacts" className="section">
       <Contacts />
     </section>
     <section>
@@ -29,3 +29,6 @@ const App = () => (
 );
 
 export default App;
+
+//GjwqBQ8klo5ousWTUdoDyZwlaG5IKdhhcHZtOILahVxkjDwuqNxhqNRd4d8U
+//https://api.sportmonks.com/football/v3

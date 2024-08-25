@@ -1,12 +1,13 @@
 import React from 'react';
-import { navLinks } from '../constans';
+import { navLinks } from '../constans/index.jsx';
 
 const Nav = () => {
   return (
     <header className="max-container py-6 absolute top-0 inset-x-4">
       <nav className="flex justify-between align-baseline">
-        <a href="/" className="font-orbitron text-3xl font-semibold text-main-green">
+        <a href="/" className="font-orbitron text-3xl font-semibold flex flex-col items-end text-main-green">
           YSL Systems
+          <span className="font-orbitron text-[0.9rem] mt-[-1.2rem]">software & solutions</span>
         </a>
         <ul className="flex-1 flex justify-center align-bottom gap-16">
           {navLinks.map((item) => (
@@ -20,7 +21,7 @@ const Nav = () => {
             </li>
           ))}
         </ul>
-        <a href="/" className="button">
+        <a href="#contacts" className="button">
           Связаться с нами
         </a>
       </nav>
